@@ -1,0 +1,177 @@
+/*-------Layout-----*/
+@font-face {
+    font-family: 'josefin_sansbold';
+    src: url('josefinsans-bold-webfont.woff2') format('woff2'),
+         url('josefinsans-bold-webfont.woff') format('woff');}
+main {
+    min-height: calc(100vh - 70px);
+    background-color: white;
+}
+/*-------header-----*/
+
+a.btn,.btn {
+  margin-right: 1em; /* remove this while use*/
+  margin-bottom: 1em; /* remove this while use*/
+    display: inline-block;
+    outline: none;
+    *zoom: 1;
+    text-align: center;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 300;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    border: 1px solid;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+}
+/* Radius */
+.btn-radius {
+  border-radius: 3px;
+}
+/* Sizes */
+.btn-small {
+    font-size: 0.8125em;
+    padding: 0.4125em 1.25em;
+}
+.btn-medium {
+    font-size: 0.9375em;
+    padding: 0.5375em 1.375em;
+}
+.btn-large {
+    font-size: 1.0625em;
+    padding: 0.5625em 1.5em;
+}
+
+/* Colors */
+.btn-green {
+    color: #3CB371;
+    border-color: #3CB371;
+}
+.btn-green:hover {
+  background: #3CB371;
+  color: #fff;
+  border-color: #3CB371;        
+}
+
+.btn-blue {
+    color: #4682B4;
+    border-color: #4682B4;
+}
+.btn-blue:hover {
+  background: #4682B4;
+  color: #fff;
+  border-color: #4682B4;        
+}
+
+.btn-orange {
+    color: #FF8C00;
+    border-color: #FF8C00;
+}
+.btn-orange:hover {
+  background: #FF8C00;
+  color: #fff;
+  border-color: #FF8C00;        
+}
+
+.btn-red {
+    color: #B22222;
+    border-color: #B22222;
+}
+.btn-red:hover {
+  background: #B22222;
+  color: #fff;
+  border-color: #B22222;    
+}
+
+.btn-gray {
+    color: #808080;
+    border-color: #808080;
+}
+.btn-gray:hover {
+  background: #808080;
+  color: #fff;
+  border-color: #808080;    
+}
+
+/*----Main------*/
+
+
+/*----------  Gallery  ----------*/
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns - responsive without mediaqueries.
+    200px is the minimum img size.
+    each column is 200px minimum (one pic fit)  will grow to 1fr until screen width size is 400px - then two imgs can fit each 200px size. next breakpoint is 600px - 3 columns can fit. 
+    */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* rows - undefiend, automatically make rows as needed. with auto height-the height of the img in that row.*/
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container>img {
+    /* display:block - img is inline by default- makes it have "line-height" applied to the bottom. display block gets rid of that line */
+    display: block;
+    /* width: 100% - img in grid cell will grow width to fit into changing cell size */
+    width: 100%;
+    cursor: pointer;
+    border-radius: 2px;
+
+}
+
+.grid-container>img:hover {
+    box-shadow: 0 19px 38px #2b2b2b;
+    /* box-shadow: 0 0 10px 6px rgba(0, 140, 186, 0.5); */
+}
+
+
+/*=============================================
+=            Meme Container            =
+=============================================*/
+
+.meme-container {
+    display: flex;
+    justify-content: center;
+    /* margin: 20px 0; */
+}
+
+.meme-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.memeCanvas {
+    border: 2px solid white;
+    border-radius: 2px;
+    margin: 5px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    align-self: flex-start;
+}
+
+input[type=text] {
+    padding: 5px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+input[type=number] {
+    width: 45px;
+}
+
+
+/*=====  End of Meme Container  ======*/
+
+.hidden {
+    display: none;
+}
+
+
+/*----------  contact  ----------*/
+
+
+/*----Footer----*/

@@ -1,0 +1,337 @@
+/* CSS Document */
+
+#start{
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width:20%;
+    height:10%;
+    border : 2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:40%;
+    top:20%;
+    color : lightgrey;
+    align-content: center;
+}
+#start:hover{
+    border: 3px solid lightseagreen;
+    color : lightseagreen;
+}
+.container_1{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: 1px solid black;
+    top: 20%;
+    left: 15%;
+}
+#levelchoice {
+    line-height: 2em;
+    color : black;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    width: 30%;
+    position: absolute;
+    padding:10px;
+    left: 30%;
+    top: 30%;
+    border : 2px solid lightseagreen;
+}
+.level{
+    cursor: pointer;
+    color: lightgray;
+}
+#leader{
+     font-size: 1.5em;
+    font-weight: bolder;
+    width:20%;
+    height:10%;
+    border : 2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:40%;
+    top:50%;
+    color : lightgrey;
+    align-content: center;
+}
+#start:hover,#leader:hover{
+    border: 3px solid lightseagreen;
+    color : lightseagreen;
+}
+#levelchoice {
+    color : black;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width: 30%;
+    position: absolute;
+    padding:10px;
+    left: 30%;
+    top: 30%;
+    border : 2px solid lightseagreen;
+}
+.level{
+    cursor: pointer;
+    color: lightgray;
+}
+.level:hover{
+    color : lightseagreen;
+}
+#levelchoice .level:hover{
+    color : lightseagreen;
+     border: 3px solid lightseagreen;
+}
+#qImg{
+    width : 200px;
+    height : 200px;
+    position: absolute;
+    left : 0px;
+    top : 0px;
+}
+#qImg img{
+    width : 200px;
+    height : 200px;
+    border-top-left-radius: 5px;
+}
+
+#question{
+    color: black;
+    width:50%;
+    height : 125px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#question p{
+    margin : 0;
+    padding : 15px;
+    font-size: 1.25em;
+}
+
+#choices{
+    color: black;
+    width : 60%;
+    position: absolute;
+    right : 0;
+    top : 125px;
+    padding : 10px
+}
+.choice{
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border : 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+}
+.choice:hover{
+    border : 2px solid grey;
+    font-weight: bold;
+}
+
+#timer{
+    position: absolute;
+    height : 100px;
+    width : 300px;
+    bottom : 0px;
+    text-align: center;
+}
+#counter{
+    font-size: 3em;
+}
+#btimeGauge{
+    width : 250px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#timeGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+#progress{
+    width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+}
+.prog{
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+#scoreContainer{
+    margin : 20px auto;
+    background-color: grey;
+    opacity: 0.9;
+    height: 100%;
+    width : 100%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    display: none;
+    }
+#scoreContainer img{
+    position: absolute;
+    top:10%;
+    left:47%;
+    height: 10%;
+}
+#scoreContainer p{
+    position: absolute;
+    display: block;
+    width : 5%;
+    height :5%;
+    top:22%;
+    left:47%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+#playagain{
+     position: absolute;
+    display: block;
+    width : 18%;
+    height :10%;
+    top:40%;
+    left:42%;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background: aqua;
+    color: white;
+    border:none;
+    box-shadow: 2px 2px 2px 2px black;
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    cursor: pointer;
+}
+#playagain:active {
+    opacity: 0.5;
+}
+#lead{
+     position: absolute;
+    display: block;
+      width : 20%;
+    height :10%;
+    top:53%;
+    left:41%;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background: aqua;
+    color: white;
+    border:none;
+    box-shadow: 2px 2px 2px 2px black;
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    cursor: pointer;
+}
+#lead:active {
+    opacity: 0.5;
+}
+#alert{
+    text-decoration: underline;
+     position: absolute;
+    width : 50%;
+    height :10%;
+   bottom:10%;
+    left:25%;
+    font-size: 1em;
+    text-align: center;
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    cursor: pointer;
+}
+#alert:hover{
+    color:lightgreen;
+}
+#submission{
+    position: absolute;
+    display: block;
+      width : 20%;
+    height :10%;
+    top:65%;
+    left:41%;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background: aqua;
+    color: white;
+    border:none;
+    box-shadow: 2px 2px 2px 2px black;
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    cursor: pointer; 
+}
+#submission:active {
+    opacity: 0.5;
+}
+.project-tab {
+    padding: 10%;
+    margin-top: -8%;
+}
+.project-tab #tabs{
+    background: #007b5e;
+    color: #eee;
+}
+.project-tab #tabs h6.section-title{
+    color: #eee;
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #0062cc;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 3px solid !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+.project-tab .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #0062cc;
+    font-size: 16px;
+    font-weight: 600;
+}
+.project-tab .nav-link:hover {
+    border: none;
+}
+.project-tab thead,.project-tab td{
+    background: #f3f3f3;
+    color: #333;
+}
+.project-tab a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+.table{
+    height: 300px;
+    overflow-y: scroll;
+    color: black;
+}
+@media screen and (max-width: 700px) {
+   #start,#leader,#levelchoice,#playagain,#lead,#alert{
+        font-size: 0.7em;
+    }
+}
+.back{
+    cursor: pointer;
+    z-index: 1111;
+}
